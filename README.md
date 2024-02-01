@@ -1,5 +1,5 @@
 # Waste-Wizard
-Senior Design Capstone Project 
+Senior Design II Capstone Project 
 
 Project Members: 
 - Zuhayer Alvi
