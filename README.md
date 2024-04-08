@@ -7,6 +7,10 @@ Project Members:
 - Kenneth Rosario
 - Riaz Ahmed
 
+### To Start Application 
+- Run `cd waste-wizard`
+- Run `npm run dev`
+
 ### Create branch
 
 If you didn't fork and will be using the main repo, use branches. (Essentially making a separate folder so it does not interfere with main branch)
