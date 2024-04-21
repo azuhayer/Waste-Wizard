@@ -20,7 +20,7 @@ To create a new branch:
 - Checkout into that branch, `git checkout your-branch`
 
 OR
-- Run 'git checkout -b your-branch' to make the branch and switch to it
+- Run `git checkout -b your-branch` to make the branch and switch to it
 
 If you forgot to make a branch before making changes, use the following command:
 - Run `git switch -c your-branch`
