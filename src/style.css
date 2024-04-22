@@ -1,0 +1,71 @@
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 0;
+  }
+
+/* Style the header */
+.header {
+    padding: 50px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #4D86A6;
+    color: #C2C9BD;
+  }
+
+/* Increase the font size of h1 elements */
+.header h1 {
+    font-size: 40px;
+  }
+
+/* Style for About Us */
+#about-us {
+    text-align: right;
+    text-decoration: none;
+}
+
+/* Style for when the About Us link is clicked */
+#about-us:visited {
+    color: inherit;
+}
+
+/* Style for label */
+.label {
+    text-align: center;
+}
+
+/*Style for body-logo*/
+.body-logo {
+    display: flex;
+    justify-content: center;
+}
+
+/* Styles for file upload and submit button below */ 
+.submission {
+    padding-top: 20px;
+    text-align: center;  
+    margin-top: 30px; 
+}
+
+.custom-file-upload, .submit-button {
+    display: inline-block;
+    padding: 15px 20px;
+    cursor: pointer;
+    background-color: #4D86A6;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+.custom-file-upload input[type="file"] {
+    display: none;
+}
+
+.submit-button:hover {
+    background-color: #30667B;
+}
+
+.custom-file-upload:hover {
+    background-color: #30667B;
+}
