@@ -11,6 +11,9 @@ body {
     justify-content: space-between;
     background: #4D86A6;
     color: #C2C9BD;
+    border-bottom-style: solid;
+    border-color: #0a251b;
+    border-width: 10px;
   }
 
 /* Increase the font size of h1 elements */
@@ -39,6 +42,7 @@ body {
 
 /* Style for label */
 .label {
+    padding: 20px;
     color: #0a251b;
     text-align: center;
 }
