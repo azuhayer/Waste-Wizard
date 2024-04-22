@@ -23,15 +23,18 @@
 </div>
 
 <div class="body-logo">
-  <img src="/images/waste-wizard.png" style="width: 400px; height: 200px;">
+  <img src="../images/waste-wizard.png" alt="WasteWizard" style="width: 400px; height: 200px;">
 </div>
 
 <div class="submission">
+  <p>Upload an image file</p>
   <label for="file-upload" class="custom-file-upload">
-    Choose Image
-    <input id="file-upload" type="file"/>
+    Upload image
+    <input type="file" id="file-upload" name="file-upload" accept="image/" />
   </label>
-  <button type="submit" class="submit-button">Submit</button>
+  <p>Or, enter image URL</p>
+  <input type="url" class="url-field" name="url" id="url" placeholder="https://example.com"/><br>
+  <input type="submit" class="submit-button" value="Submit">
 </div>
 
 </body>
