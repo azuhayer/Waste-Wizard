@@ -20,17 +20,26 @@ body {
 
 /* Style for About Us */
 #about-us {
+    color: #0a251b;
     text-align: right;
     text-decoration: none;
 }
 
-/* Style for when the About Us link is clicked */
-#about-us:visited {
-    color: inherit;
+#about-us:hover {
+    color: #C2C9BD;
+}
+
+.url-field {
+    width: 200px;
+    border: none;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
 }
 
 /* Style for label */
 .label {
+    color: #0a251b;
     text-align: center;
 }
 
@@ -48,6 +57,8 @@ body {
 }
 
 .custom-file-upload, .submit-button {
+    width: 150px;
+    height: 50x;
     display: inline-block;
     padding: 15px 20px;
     cursor: pointer;
