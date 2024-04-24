@@ -7,8 +7,10 @@ Project Members:
 - Kenneth Rosario
 - Riaz Ahmed
 
-### To Run Application
-Run `python app.py` and click on the local host link
+### To Run Application Locally
+- Clone the repository
+- Run `pip install Flask` if you dont have flask installed 
+- Run `python app.py` and click on the local host link 
 
 ### Create branch
 
