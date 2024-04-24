@@ -7,6 +7,9 @@ Project Members:
 - Kenneth Rosario
 - Riaz Ahmed
 
+### To Run Application
+Run `python app.py` and click on the local host link
+
 ### Create branch
 
 If you didn't fork and will be using the main repo, use branches. (Essentially making a separate folder so it does not interfere with main branch)
