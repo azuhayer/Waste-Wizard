@@ -5,14 +5,14 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <script src="https://kit.fontawesome.com/35e386a7f3.js" crossorigin="anonymous"></script>
-<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+<link rel="stylesheet" type="text/css" href="../static/style.css">
 </head>
 
 <body style="background-color: #C2C9BD;">
 
 <div class="header">
   <a href="/">
-    <img src="{{ url_for('static', filename='images/waste-wizard.png') }}" alt="WasteWizard" style="width: 200px; height: 100px;">
+    <img src="../static/images/waste-wizard.png" alt="WasteWizard" style="width: 200px; height: 100px;">
   </a>
   <a href="/about" id="about-us">
     <h1>About Us</h1>
@@ -20,13 +20,15 @@
 </div>
 
 <div class="about-image">
-  <img src="{{ url_for('static', filename='images/waste-wizard.png') }}" alt="WasteWizard" style="width: 400px; height: 200px;">
+  <img src="../static/images/waste-wizard.png" alt="WasteWizard" style="width: 400px; height: 200px;">
 </div>
 
 <div class="about-paragraph">
-  <p>Built using Facebooks' Detectron2 algorithm, Waste Wizard has the potential to help create a world where manually sorting waste into distinct categories becomes a thing of the past. 
-    Our Motivation for working on this application is that climate change has become a major issue that affects all of us around the world. 
-    By creating this application we want to introduce a way to reduce the risks of human pollution by allowing users to classify trash products for easier sorting. </p>
+  <p>
+    Recycling properly can be difficult, and many people dont know where to start. Waste Wizard aims to educate people about practical and sustainable ways to dispose of waste.  
+    Built using Facebook's Detectron2, the main feature of this site is a trash detector which allows users to upload an image of a waste product to easily categorize items that might be otherwise difficult to classify.
+    The ever present threat of climate change has motivated our team to create a place where people can quickly get guidance on how to classify a waste product.
+  </p>
 </div>
 
 <a href="https://github.com/azuhayer/Waste-Wizard" class="github-icon" target="_blank">
