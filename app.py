@@ -33,14 +33,14 @@ def upload_file():
     # if user does not select file, browser also
     # submit an empty part without filename
     if file.filename == '':
-        flash('No selected file')
+        flash('No file selected')
         return redirect(request.url)
     if file and allowed_file(file.filename):
         filename = secure_filename(file.filename)
         file.save(os.path.join(app.config['UPLOAD_FOLDER'], filename))
         return render_template("index.html", uploaded_file=filename)
     else:
-        flash('Allowed image types are -> png, jpg, jpeg')
+        flash('Invalid File Type: Allowed image types are -> png, jpg, jpeg')
         return redirect(request.url)
 
 @app.route('/uploads/<filename>')
