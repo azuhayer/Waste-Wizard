@@ -26,17 +26,7 @@
   <img src="{{ url_for('static', filename='images/waste-wizard.png') }}" style="width: 400px; height: 200px;">
 </div>
 
-<p>
-	{% with messages = get_flashed_messages() %}
-	  {% if messages %}
-		<ul>
-		{% for message in messages %}
-		  <li>{{ message }}</li>
-		{% endfor %}
-		</ul>
-	  {% endif %}
-	{% endwith %}
-</p>
+
 
 <div class="submission">
   <p>Upload an image file</p>
@@ -48,13 +38,24 @@
     <input type="submit" class="submit-button" value="Submit">
   </form>
 
+  <p>
+    {% with messages = get_flashed_messages() %}
+      {% if messages %}
+      <ul style="display: table; margin: 0 auto;">
+      {% for message in messages %}
+        <li>{{ message }}</li>
+      {% endfor %}
+      </ul>
+      {% endif %}
+    {% endwith %}
+  </p>
+
   {% if uploaded_file %}
     <div>
       <img src="{{ url_for('send_uploaded_file', filename=uploaded_file) }}" style="width: 500px; margin: 20px;">
     </div>
   {% endif %}
   
-
   <p>Or, enter image URL</p>
   <input type="url" class="url-field" name="url" id="url" placeholder="https://example.com"/><br>
   <input type="submit" class="submit-button" value="Submit">
