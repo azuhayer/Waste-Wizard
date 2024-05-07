@@ -29,11 +29,11 @@ app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
 
 def predict(file):
     cfg = get_cfg()
-    cfg.merge_from_file("static/config.yaml")
+    cfg.merge_from_file("static/config_1.yaml")
     cfg.MODEL.ROI_HEADS.SCORE_THRESH_TEST = 0.5  # set threshold for this model
     cfg.DATASETS.TEST = ("taco_val",)
     cfg.MODEL.DEVICE = "cpu"
-    cfg.MODEL.WEIGHTS = os.path.join("static","model_final.pth")
+    cfg.MODEL.WEIGHTS = os.path.join("static","model_final_1.pth")
     predictor = DefaultPredictor(cfg)
 
     img = cv2.imread(os.path.join(UPLOAD_FOLDER,file.filename))
@@ -85,10 +85,14 @@ def upload_file():
         flash('No file selected')
         return redirect(request.url)
     if file and allowed_file(file.filename):
-        file = predict(file)
         filename = secure_filename(file.filename)
         file.save(os.path.join(app.config['UPLOAD_FOLDER'], filename))
-        return render_template("index.html", uploaded_file=filename)
+
+        predict_file = predict(file)
+        
+        predict_filename = secure_filename(file.filename)
+        predict_file.save(os.path.join(app.config['UPLOAD_FOLDER'], predict_filename))
+        return render_template("index.html", uploaded_file=predict_filename)
     else:
         flash('Invalid File Type: Allowed image types are -> png, jpg, jpeg')
         return redirect(request.url)
@@ -98,7 +102,7 @@ def send_uploaded_file(filename):
     return send_from_directory(app.config['UPLOAD_FOLDER'], filename)
 
 if __name__ == '__main__':
-    register_coco_instances("taco_val", {}, "static/annotations_9_val.json", UPLOAD_FOLDER)
-    val_dataset_dicts = DatasetCatalog.get("taco_val")
+    #register_coco_instances("taco_val", {}, "static/annotations_9_val.json", UPLOAD_FOLDER)
+    #val_dataset_dicts = DatasetCatalog.get("taco_val")
     app.secret_key = "ladfhjkh"
     app.run()
