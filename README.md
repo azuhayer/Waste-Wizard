@@ -8,8 +8,12 @@ Project Members:
 - Riaz Ahmed
 
 ### To Run Application Locally
-- Clone the repository
-- Run `pip install Flask` if you dont have flask installed 
+- Clone the repository and open via VSCODE
+- Download and install Anaconda: https://www.anaconda.com/download
+- Open Anaconda Prompt (terminal) and create a python env: `conda create env-name`
+- Activate the python env: `conda activate env-name`
+- Install all dependencies as listed within the requirements.txt file
+- Run `cd Waste-Wizard`
 - Run `python app.py` and click on the local host link 
 
 ### Create branch
