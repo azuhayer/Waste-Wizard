@@ -13,7 +13,8 @@ Project Members:
 - Open Anaconda Prompt (terminal) and create a python env: `conda create env-name`
 - Activate the python env: `conda activate env-name`
 - Install all dependencies as listed within the requirements.txt file
-- Run `cd Waste-Wizard`
+- On VSCODE click `crtl + shift + p` and type `python:select interpreter`. Click on the new python env created. 
+- Run `cd Waste-Wizard` on anaconda prompt
 - Run `python app.py` and click on the local host link 
 
 ### Create branch
