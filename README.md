@@ -5,6 +5,10 @@ Senior Design II Capstone Project
   <img src="https://github.com/azuhayer/Waste-Wizard/assets/80214490/80991f70-e360-47d7-8ac8-bd193b61d118" width="460px" height="250px"/>
 </div>
 
+<br>
+
+Final Presentation: https://docs.google.com/presentation/d/1Gz6PN1Ti8oZKPQiXFVDj_9Kes9Tc0JPmW6coFEp-xmE/edit?usp=sharing
+
 Project Members: 
 - Zuhayer Alvi
 - Shakir Hossain
